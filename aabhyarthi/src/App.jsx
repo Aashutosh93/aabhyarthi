@@ -1,15 +1,18 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Header from "./components/Header"
+import About from './pages/About'
+import Dashbord from './pages/Dashbord'
 import Home from './pages/Home'
-import About  from './pages/About'
+import Project from './pages/Projects'
 import SignIn from './pages/Signin'
 import SignUp from './pages/Signup'
-import Dashbord from './pages/Dashbord'
-import Project from './pages/Projects'
 
 
 export default function App() {
   return (
     <BrowserRouter >
+    <Header/>
+
     <Routes>
       <Route path="/" element={<Home /> } />
       <Route path="/about" element={<About /> } />
