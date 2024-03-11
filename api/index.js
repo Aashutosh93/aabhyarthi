@@ -9,9 +9,9 @@ mongoose
     .then(()=> {
         console.log ( 'MongoDB is connected' );
      },)
-     .catch{ (err)=> {
+     .catch( (err)=> {
         console.log(err);
-     }};
+     });
 
 const app = express();
 app.listen(3000, () => {
